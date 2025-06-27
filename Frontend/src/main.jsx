@@ -11,14 +11,14 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <AuthContextProvider>
-        {/* <ToastContainer
+        <App />
+        <ToastContainer
         theme='dark'
         position='bottom-left'
         autoClose={3000}
         closeOnClick
         pauseOnHover={false}
-      /> */}
-        <App />
+      />
       </AuthContextProvider>
 
     </BrowserRouter>
