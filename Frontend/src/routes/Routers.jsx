@@ -8,8 +8,9 @@ import Signup from '../pages/Signup'
 import Contact from '../pages/Contact'
 import Services from '../pages/Services'
 import MyAccount from '../Dashboard/user-account/MyAccount'
-import DoctorAccount from '../Dashboard/doctor-account/DoctorAccount'
 import ProtectedRoutes from './ProtectedRoutes'
+import Dashboard from '../Dashboard/doctor-account/Dashboard'
+import CheckoutSuccess from '../pages/CheckoutSuccess'
 
 const Routers = () => {
   return (
@@ -22,8 +23,9 @@ const Routers = () => {
         <Route path="/register" element={<Signup/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/checkout-success" element={<CheckoutSuccess/>} />
         <Route path="/users/profile/me" element={<ProtectedRoutes allowedRoles={['patient']} ><MyAccount/></ProtectedRoutes>} />
-        <Route path="/doctors/profile/me" element={<ProtectedRoutes allowedRoles={['doctor']}><DoctorAccount/></ProtectedRoutes>} />
+        <Route path="/doctors/profile/me" element={<ProtectedRoutes allowedRoles={['doctor']}><Dashboard/></ProtectedRoutes>} />
     </Routes>
   )
 }

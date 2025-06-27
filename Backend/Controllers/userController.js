@@ -87,6 +87,7 @@ export const getMyAppointments = async(req,res)=>{
         const doctorIds = bookings.map(e=> e.doctor.id);
 
         //step-3: retrieve doctors using doctor ids
+        //$in: it is a mongodb operator to match multiple ids at once 
         const doctors = await Doctor.find({ _id: { $in: doctorIds }}).select("-password");
 
         res.status(200).json({success: true, message: "Appointments are getting", data: doctors});

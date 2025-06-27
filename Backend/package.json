@@ -1,7 +1,7 @@
 {
   "name": "medicare-booking",
   "version": "1.0.0",
-  "type" : "module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,6 +19,7 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.1",
-    "mongoose": "^8.11.0"
+    "mongoose": "^8.11.0",
+    "stripe": "^18.1.1"
   }
 }
