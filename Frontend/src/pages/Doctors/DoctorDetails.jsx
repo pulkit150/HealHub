@@ -1,5 +1,5 @@
 import { use, useState } from 'react'
-import starIcon from '../../assets/images/star.png'
+import starIcon from '../../assets/images/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Feedback from './Feedback'
 import SidePanel from './SidePanel'
