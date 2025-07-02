@@ -14,9 +14,9 @@ const DoctorCard = ({ doctor }) => {
   } = doctor;
 
   return (
-    <div className='p-3 lg:p-5'>
+    <div className='p-3 lg:p-5 shadow-2xl'>
       <div>
-        <img src={photo} className='w-full' alt="" />
+        <img src={photo} className='w-full rounded-t-lg' alt="" />
       </div>
 
       <h2 className='text-[18px] leading-[30px] lg:text-[26px] 
