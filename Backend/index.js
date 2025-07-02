@@ -15,7 +15,11 @@ const app = express();
 const port = process.env.PORT || 8000
 
 const corsOptions = {
-    origin:true
+
+    origin: 'https://healhub-2-0099.onrender.com',
+
+    credentials: true,
+
 }
 
 app.get('/', (req,res)=>{
